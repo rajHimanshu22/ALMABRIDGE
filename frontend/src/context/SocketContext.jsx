@@ -19,7 +19,7 @@ export const SocketContextProvider = ({ children }) => {
 
     // connect with socket server
 	useEffect(() => {
-		const socket = io("http://localhost:3000", {
+		const socket = io("/", {
 			query: {
 				userId: user?._id,  // every time when we refresh page the socket id changes that we pass in console from backend
 			},
