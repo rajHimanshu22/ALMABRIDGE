@@ -9,7 +9,7 @@ export default defineConfig({
     // Get rid of the CORS error
     proxy: {
       "/api" : {
-        target: "https://almabridge.onrender.com",
+        target: "http://localhost:3000",
         changeOrigin: true,
         secure:false,
       }
